@@ -4,31 +4,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+height: 100%;
+  margin: 0;
 
+  footer{
+    text-align: center; 
+    color: orange;
+    font-size: 3.0em;
+  }
+}
 /* Fonte e cores gerais */
 body {
+   
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+width: 100%;
+background-repeat: no-repeat;
+overflow-y: scroll;
+    background-image: url(/imagens/background.jpg)
 }
 
 header {
-    background: #4b0082; /* roxo mágico */
-    color: white;
+    
+    color: purple;
     padding: 1rem;
     text-align: center;
 }
 
 header h1 {
     margin-bottom: 0.5rem;
+    font-size: 5em ;
 }
 
 nav a {
-    color: white;
+    color: purple;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+    font-size: 2.5em;
 }
 
 nav a:hover {
@@ -40,13 +60,20 @@ main {
 }
 
 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
     margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3.0em;
 }
 
-.grid-produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+.grid-produtos {display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center; 
+  align-items: center;   
+  max-width: 1200px; 
+  margin: 0 auto;    
 }
 
 .produto {
@@ -99,6 +126,10 @@ h2 {
     max-width: 600px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-image: url(imagens/MODAL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fechar-modal {
@@ -188,4 +219,26 @@ h2 {
     color: #888;
     font-style: italic;
     padding: 2rem;
+}
+/* Cor do nome do produto no modal */
+.item-carrinho h4 {
+    color: cadetblue;
+}
+
+/* Cor do valor do produto no modal */
+.item-carrinho p {
+    color: cadetblue;
+     text-shadow: 1px 1px 2px black;
+}
+
+/* Cor da quantidade do produto no modal */
+.item-carrinho .quantidade-item {
+    color: cadetblue;
+     text-shadow: 1px 1px 2px black;
+}
+.modal-conteudo {
+    background-image: url('imagens/MODAL.jpg');
+    background-size: cover;
+    background-position: center;
+
 }

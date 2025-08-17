@@ -4,25 +4,25 @@ const produtos = [
     nome: "Poção Mágica",
     descricao: "Uma poção misteriosa que brilha no escuro.",
     preco: 49.90,
-    imagem: "https://via.placeholder.com/200x150"
+    imagem: "pocao magica.jpg"
   },
   {
     nome: "Varinha Encantada",
     descricao: "Feita de madeira ancestral, canaliza magia poderosa.",
     preco: 129.90,
-    imagem: "https://via.placeholder.com/200x150"
+    imagem: "varinha encantada.jpg"
   },
   {
     nome: "Grimório Antigo",
     descricao: "Contém feitiços esquecidos por séculos.",
     preco: 199.90,
-    imagem: "https://via.placeholder.com/200x150"
+    imagem: "grimorio antigo.jpg"
   },
   {
     nome: "Erva Mata Lobos",
     descricao: "Uma erva poderosa contra lobisomens.",
     preco: 49.90,
-    imagem: "https://via.placeholder.com/200x150"
+    imagem: "erva mata lobisomen.jpg"
   }
 ];
 
