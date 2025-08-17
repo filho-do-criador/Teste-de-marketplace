@@ -66,18 +66,19 @@ h2 {
     text-align: center;
     font-size: 3.0em;
 }
-
-.grid-produtos {display: grid;
+.grid-produtos {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   justify-items: center; 
   align-items: center;   
-  max-width: 1200px; 
-  margin: 0 auto;    
+  max-width: 1200px;
+  margin: 0 auto 0 10%;
 }
 
+
 .produto {
-    background: white;
+    background: transparent;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -220,18 +221,17 @@ h2 {
     font-style: italic;
     padding: 2rem;
 }
-/* Cor do nome do produto no modal */
+
 .item-carrinho h4 {
     color: cadetblue;
 }
 
-/* Cor do valor do produto no modal */
 .item-carrinho p {
     color: cadetblue;
      text-shadow: 1px 1px 2px black;
 }
 
-/* Cor da quantidade do produto no modal */
+
 .item-carrinho .quantidade-item {
     color: cadetblue;
      text-shadow: 1px 1px 2px black;
@@ -241,4 +241,71 @@ h2 {
     background-size: cover;
     background-position: center;
 
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        display: block; 
+        margin: 0.5rem 0; 
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+   
+    #produtos h2 {
+        font-size: 1.5em;
+    }
+
+  
+    .menu-item-nao-essencial {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+   
+    .modal-conteudo {
+        margin: 10% auto;
+    }
+
+    .item-carrinho img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    
+    .btn-quantidade {
+        padding: 0.1em 0.3em;
+        font-size: 0.9em;
+    }
+}
+.produto h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color:orange;
+}
+
+.produto p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: orange;                                              
+}
+
+@media (max-width: 600px) {
+   
+
+    .grid-produtos {
+        grid-template-columns: 2fr; 
 }
