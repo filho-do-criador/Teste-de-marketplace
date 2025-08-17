@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Fantástica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🪄 Loja Fantástica</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+     <a href="#" id="link-carrinho">Carrinho 🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos em destaque</h2>
+      <div class="grid-produtos">
+              </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Loja Fantástica - Todos os direitos reservados</p>
+  </footer>
+
+    <div id="modal-carrinho" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar-modal">&times;</span>
+      <h2>🛒 Seu Carrinho</h2>
+      <div id="itens-do-carrinho">
+        <p class="carrinho-vazio-msg">Seu carrinho está vazio.</p>
+      </div>
+      <div class="carrinho-rodape">
+        <p>Total: <strong id="carrinho-total">R$ 0,00</strong></p>
+        <button id="finalizar-compra-btn" class="finalizar-compra">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
